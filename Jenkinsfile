@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DB_HOST = 'db-test.c1aoqqaugpm7.eu-north-1.rds.amazonaws.com'
+        DB_HOST = 'database-1.c1aoqqaugpm7.eu-north-1.rds.amazonaws.com'
         DB_NAME = 'test'
         AWS_BUCKET = 'test-jnk'
         GZ_FILE_NAME = "backup_${new Date().format('yyyyMMdd_HHmmss')}.sql.gz"
